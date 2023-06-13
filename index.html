@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Agenda</title>
+  <script src="src/Codigo.js"></script>
+
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #353434ec;
+      margin: 0;
+      padding: 0;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 70px;
+    }
+
+    #contact-list {
+      max-width: 400px;
+      margin: 15px auto;
+      background-color: #0c0b0b;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(2, 2, 2, 0.1);
+      padding: 20px;
+      
+    }
+
+    #contact-list table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    #contact-list th, #contact-list td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #918eb1;
+    }
+
+    #add-contact-form {
+      max-width: 400px;
+      margin: 20px auto;
+      text-align: left;
+      background-color: #808080;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    #add-contact-form label {
+      display: block;
+      margin-bottom: 10px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      
+      
+    }
+
+    #add-contact-form input[type="text"] {
+      width: 100%;
+      padding: 6px;
+      border-radius: 2px;
+      border: 1px solid #5756566e;
+      background-color: #808080;
+      font-style: normal;
+
+    }
+
+    .aaaBTN {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #0805aa;
+      color: #020000fb;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+    }
+
+    
+    .cccBTN { 
+
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #0805aa;
+      color: #020000fb;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      margin-left: 20px;
+    }
+  </style>
+
+
+               </head>
+
+            <body>
+         <h1>Agenda de Contactos</h1>
+
+
+   <form id="add-contact-form">
+
+    <p>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre">
+      </p>
+
+
+        <p>
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" required>
+  </p>
+
+    <p></p>
+    <label for="telefono">Teléfono:</label>
+    <input type="text" id="telefono" required>
+  </p>
+    
+    <button class="aaaBTN" type="button">Agregar Nuevo Contacto</button>
+    <button class="cccBTN" type="button">Contactos Existentes</button>
+  </form>
+
+
+</body>
+
+
+</html>
